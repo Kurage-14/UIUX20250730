@@ -1,12 +1,12 @@
-@mixin setting()
+@mixin setting($bgc1)
     width: 200px
     height: 200px
     margin-bottom: 20px
+    background-color: $bgc1
 
 .block1
     position: relative
-    @include setting
-    background-color: #dd5555
+    @include setting(#dd5555)
     border-radius: 10px
     .circle
         position: absolute
@@ -18,12 +18,10 @@
         background-color: #fff
 
 .block2
-    @include setting
-    background-color: #71ef28
+    @include setting(#a2f175)
 
 .block3
-    @include setting
-    background-color: #13afe2
+    @include setting(#d113e2)
 
 @for $i from 1 through 20
     $size: 10 + $i * 2
