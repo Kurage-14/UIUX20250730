@@ -1,3 +1,9 @@
 body {
   height: 100vh;
+}
+
+.box {
+  background-color: #abf63a;
+  height: 100px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=testGrid.css.map */
