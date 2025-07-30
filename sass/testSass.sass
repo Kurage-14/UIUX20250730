@@ -12,3 +12,8 @@
         height: 30px
         border-radius: 50%
         background-color: #fff
+
+@for $i from 1 through 20
+    $size: 10 + $i * 2
+    .fz-#{$size}
+        font-size: #{$size}px
