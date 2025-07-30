@@ -1,7 +1,11 @@
+@mixin setting()
+    width: 200px
+    height: 200px
+    margin-bottom: 20px
+
 .block1
     position: relative
-    width: 100px
-    height: 100px
+    @include setting
     background-color: #dd5555
     border-radius: 10px
     .circle
@@ -12,6 +16,14 @@
         height: 30px
         border-radius: 50%
         background-color: #fff
+
+.block2
+    @include setting
+    background-color: #71ef28
+
+.block3
+    @include setting
+    background-color: #13afe2
 
 @for $i from 1 through 20
     $size: 10 + $i * 2
